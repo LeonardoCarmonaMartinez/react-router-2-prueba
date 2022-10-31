@@ -1,13 +1,226 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.divNav {
+  height:20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(7, 126, 126, 0.788);
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+}
+
+.navlinkHome {
+  font-size: xx-small;
+  font-weight: 600;
+  color:white;
+  text-decoration-line: none;
+  margin-right: 20rem;
+}
+
+.navlinkCarrito {
+  font-size: xx-small;
+  font-weight: 600;
+  color:white;
+  text-decoration-line: none;
+
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  color: whitesmoke;
+  background-image: url(../src/assets/img/bgpizza.jpg);
+  
+
+}
+
+.divBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.divCard {
+  width: 70%;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px black;
+  font-size: 7px;
+}
+
+.divCard img {
+  width: 100%;
+  height: 100px;
+}
+
+hr {
+  width: 95%;
+  height: 0.05em;
+  background-color: grey;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.divCard li {
+  list-style: none;
+}
+
+.divButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.buttonVer {
+  width: 8em;
+  height: 2.5em;
+  background-color: blue;
+  color: white;
+  font-size: 0.75em;
+  border-radius: 3px;
+}
+
+.buttonAñade {
+  width: 8em;
+  height: 2.5em;
+  background-color: red;
+  color: white;
+  font-size: 0.75em;
+  border-radius: 3px;
+}
+
+.divDesc {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  width: 90%;
+  height: 200px;
+  border: solid 1px grey;
+  margin: 2em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.divDesc img {
+  width: 100%;
+  height: 200px;
+}
+
+.divDesc h4 {
+  font-size: 11px;
+  margin: 0.5em;
+}
+
+.divDesc p {
+  font-size: 8px;
+  margin: 0.5em;
+  text-align: justify;
+}
+
+.divDesc li {
+  list-style: none;
+  font-size: 9px;
+  margin: 0.5em;
+  margin-left: 3em;
+}
+
+.divPrecio {
+  display: flex;
+  justify-content:space-between;
+}
+
+.divDesc button {
+  width: 50px;
+  height: 20px;
+  font-size: 8px;
+  margin-right: 1em;
+}
+
+.divDesc hr {
+  width: 98%;
+  height: 0.05em;
+  background-color: grey;
+  margin-left: 0.25em;
+}
+
+.divCarrito {
+  width: 50%;
+  height: 10rem;
+  margin-left: 10em;
+  margin-top: 2em;
+  background-color: rgb(229, 226, 226);
+}
+
+.divCarrito p {
+  height: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 8px;
+  padding-top: 1em;
+  margin-left: 5em;
+}
+
+.divCompra {
+  width: 80%;
+  height: 8rem;
+  background-color: white;
+  margin-left: 2.5em;
+}
+
+.divCompra li {
+  display: flex;
+}
+
+.divCompra h4 {
+  font-size: 10px;
+  margin-left: 1em;
+}
+
+.buttonPay {
+  width: 35px;
+  height: 12px;
+  border-radius: 3px;
+  background-color: green;
+  font-size: 6px;
+  color: white;
+  margin-left: 2em;
+}
+
+.liCantidad {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.1em;
+  list-style: none;
+}
+
+.liCantidad img {
+  width: 20px;
+  height: 20px;
+}
+
+.buttonDis {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  color: white;
+}
+
+.buttonAum {
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  color: white;
 }
